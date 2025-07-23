@@ -2,7 +2,7 @@
 write a program to pronounce list of names 
 if you are given a list l as follows:
     #Python
-l = ["Rahul", "Nishat", "Harry"]
+l = ["Gourab", "Souvik", "Subham"]
 
 your program should pronounce
 
