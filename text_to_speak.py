@@ -1,19 +1,19 @@
 ''' 
-write a program to pronounce list of names using win32 api for mac
+write a program to pronounce list of names 
 if you are given a list l as follows:
     #Python
 l = ["Rahul", "Nishat", "Harry"]
 
 your program should pronounce
 
-shoutout to rahul
-shoutout to nisant
+shoutout to Gourab
+shoutout to Souvik
 
 '''
 
 import win32com.client as wincl
 
-l = ["Rahul", "Nishat", "Harry","Gourab", "Subham"]
+list = ["Gourab", "Souvik","Subham", "Manash"]
 
 def sappi(name):
     speaker_number = 1
@@ -25,5 +25,5 @@ def sappi(name):
     spk.SetVoice(vcs.Item(speaker_number)) # set voice (see Windows Text-to-Speech settings)
     spk.Speak(f"Shout out to {name}")
 
-for names in l:
+for names in list:
     sappi(names)
